@@ -4,12 +4,18 @@
 }
 
 body {
+  width: 100%;
   background-color: black;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .custom-logo {
   width: 180px;
+}
+
+.titlePadding {
+  padding-top: 200px;
 }
 
 .custom-link {
@@ -113,8 +119,73 @@ body {
   background-image: url(../images/home/04.jpg);
 }
 
-.titlePadding {
-  padding-top: 200px;
+.container05 {
+  background-image: url(../images/eagle-twelve/01.jpg);
+}
+
+.container06 {
+  background-image: url(../images/eagle-twelve/02.jpg);
+}
+
+.carrossel101 {
+  background-image: url(../images/eagle-twelve/03.jpg);
+}
+
+.carrossel102 {
+  background-image: url(../images/eagle-twelve/04.jpg);
+}
+
+.carrossel103 {
+  background-image: url(../images/eagle-twelve/05.jpg);
+}
+
+.carrossel104 {
+  background-image: url(../images/eagle-twelve/06.jpg);
+}
+
+.carrossel105 {
+  background-image: url(../images/eagle-twelve/07.jpg);
+}
+
+.container-eagle-desc {
+  margin-top: 100px;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container-eagle-desc .eagle-desc-paragraph {
+  max-width: 640px;
+  line-height: 50px;
+}
+
+.custom-table {
+  display: block;
+  max-width: 520px;
+  height: 100%;
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 15px;
+  font-weight: 500;
+}
+.custom-table table {
+  width: 100%;
+  padding-right: 50px;
+}
+.custom-table table td {
+  margin: 5px 10px;
+  padding: 20px 0px;
+}
+
+.carrossel102-content {
+  display: block;
+  max-width: 520px;
+  height: 100%;
+  margin-top: 20%;
+  margin-left: 10%;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

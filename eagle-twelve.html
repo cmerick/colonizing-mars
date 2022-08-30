@@ -2,61 +2,220 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/logos/favicon.png" type="image/x-icon">
-
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- bootstrap cdn css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <!-- aos css link  -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/logos/favicon.png" type="image/x-icon">
+  <!-- bootstrap cdn css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <!-- aos css link  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>ECM - Eagle 12</title>
 </head>
 
-<body>
-    <header class="fixed-top header">
-        <nav class="navbar navbar-expand-lg bg-transparent pt-4 ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./images/logos/Logo1.png" class="img-fluid pb-2 me-5 custom-logo" alt="logo">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon small"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item ">
-                    <a class="nav-link text-white custom-link me-4 p-0" href="./eagle-twelve.html">EAGLE 12</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link text-white custom-link p-0" href="./mars-colonization.html">MARS COLONIZATION</a>
-                  </li>
-              </div>
-            </div>
-          </nav>
-    </header>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <header class="container fixed-top">
+    <nav class="navbar navbar-expand-md bg-transparent pt-4">
+      <a class="navbar-brand custom-logo" href="./index.html">
+        <img src="./images/logos/Logo1.png" class="img-fluid pb-3 me-5 " alt="logo">
+      </a>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link text-white custom-link me-4 p-0" href="./eagle-twelve.html">
+              EAGLE 12
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white custom-link p-0" href="./mars-colonization.html">MARS
+              COLONIZATION</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler custom-menu-btn navbar-dark " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+    </nav>
+  </header>
+  <div class="offcanvas offcanvas-end bg-black" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header justify-content-end mt-4">
+      <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body display-10">
+      <ul class="navbar-nav justify-content-start text-end">
+        <li class="nav-item">
+          <a class="nav-link text-white border-dark border-bottom" href="./eagle-twelve.html">
+            EAGLE 12
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white  border-dark border-bottom" href="./mars-colonization.html">MARS
+            COLONIZATION</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid d-flex flex-column justify-content-end container00 container05">
+    <div class="container aos-init">
+      <div class="container titlePadding text-center text-white aos-init" data-aos="fade-up" data-aos-duration="1000">
+        <p class="h5" id="launchComing">LANÇAMENTO A CAMINHO</p>
+        <P class="h1">MISSÃO MARS COLONIZATION</P>
+      </div>
+      <div class="container text-center mt-5 mb-5">
+        <img src="../images/home/arrowDown.gif" alt="" class="arrowDown">
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5 text-center text-white aos-init" data-aos="flip-up" data-aos-duration="2000">
+    <div class="row">
+      <div class="col">
+        <p class="display-1">126</p>
+        <p class="data-title">LANÇAMENTOS TOTAIS</p>
+      </div>
+      <div class="col">
+        <p class="display-1">86</p>
+        <p class="data-title">DESEMBARQUES TOTAIS</p>
+      </div>
+      <div class="col">
+        <p class="display-1">68</p>
+        <p class="data-title">FOGUETES RECUPERADOS</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5 container00 container06">
+    <div class="container aos-init">
 
-    
+      <div class="container-fluid titlePadding container-eagle-desc aos-init" data-aos="fade-left"
+        data-aos-duration="2000">
+        <p class="eagle-desc-paragraph">O Falcon 9 é um foguete reutilizável de dois estágios projetado e
+          fabricado pela SpaceX para o transporte confiável e seguro de pessoas
+          e cargas úteis para a órbita da Terra e além. Falcon 9 é o primeiro foguete
+          reutilizável de classe orbital do mundo. A capacidade de reutilização permite que
+          a SpaceX refile as partes mais caras do foguete, o que, por sua vez, reduz o custo do
+          acesso ao espaço.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="container-fluid carousel-item active container00 carrossel101" data-bs-interval="1000000000">
+        <div class="container p-5 custom-table">
+          <h5 data-aos="fade-left" data-aos-delay="100">EAGLE 12</h5>
+          <h2 class="display-4" data-aos="fade-left" data-aos-delay="200">OVERVIEW</h2>
+          <table class="container table  text-white">
+            <tbody class="">
+              <tr class="" data-aos="fade-left" data-aos-delay="300">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+              <tr class="" data-aos="fade-left" data-aos-delay="400">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+              <tr class="" data-aos="fade-left" data-aos-delay="500">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+              <tr class="" data-aos="fade-left" data-aos-delay="600">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+              <tr class="" data-aos="fade-left" data-aos-delay="700">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+              <tr class="" data-aos="fade-left" data-aos-delay="800">
+                <td>HEIGHT</td>
+                <td class="text-end">70 m <span class="text-muted">/229.6 ft</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="carousel-item container00 carrossel102" data-bs-interval="1000000000">
+
+        <div class="container p5 carrossel102-content">
+          <h5 class="">EAGLE 12</h5>
+          <h3 class="display-4">PRIMEIRO ESTÁGIO</h3>
+          <p class="pe-5">
+            Falcon 9's O primeiro estágio do Falcon 9 incorpora nove motores Merlin e tanques de liga de
+            alumínio-lítio
+            contendo oxigênio líquido e propelente de querosene de grau de foguete (RP-1).
+          </p>
+          <p class="pe-5">
+            O Falcon 9 gera mais de 1,7 milhão de libras de empuxo ao nível do mar.
+          </p>
+        </div>
+
+      </div>
+      <div class="carousel-item container00 carrossel103" data-bs-interval="1000000000">
+
+        <div class="carousel-caption d-none d-md-block">
+
+        </div>
+      </div>
+      <div class="carousel-item container00 carrossel104" data-bs-interval="1000000000">
+
+        <div class="carousel-caption d-none d-md-block">
+
+        </div>
+      </div>
+      <div class="carousel-item container00 carrossel105" data-bs-interval="1000000000">
+
+        <div class="carousel-caption d-none d-md-block">
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <footer>
+    <div class="container footer">
+      <span class="me-4 ">ECM Tech &copy; 2022</span>
+      <a href="" class="me-4">Instagram</a>
+      <a href="" class="me-4">Linkedin</a>
+      <a href="">Github</a>
+    </div>
+  </footer>
 
 
 
-    <!-- bootstrap js -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- bootstrap cdn js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- aos script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+  <!-- bootstrap js -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- bootstrap cdn js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 

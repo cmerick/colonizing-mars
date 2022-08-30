@@ -1,17 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
+    width: 100%;
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    color: white;
 
 }
 
 .custom-logo {
     width: 180px;
 
+}
+.titlePadding{
+    padding-top: 200px;
 }
 
 .custom-link {
