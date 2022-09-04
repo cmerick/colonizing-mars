@@ -4,14 +4,13 @@
 }
 
 body {
-  width: 100%;
   background-color: black;
   font-family: "Roboto", sans-serif;
   color: white;
 }
 
 .custom-logo {
-  width: 180px;
+  max-width: 180px;
 }
 
 .titlePadding {
@@ -127,6 +126,10 @@ body {
   background-image: url(../images/eagle-twelve/02.jpg);
 }
 
+.container07 {
+  background-image: url(../images/eagle-twelve/08.jpg);
+}
+
 .carrossel101 {
   background-image: url(../images/eagle-twelve/03.jpg);
 }
@@ -186,6 +189,59 @@ body {
   margin-left: 10%;
   font-weight: 500;
   font-size: 15px;
+}
+
+.carrosselSlide {
+  max-height: 100vh;
+  background-color: black;
+}
+
+.slideDesc {
+  text-align: center;
+}
+
+.custom-table-2 {
+  max-width: 600px;
+  margin-left: 0;
+}
+
+.downloadDesc {
+  padding-top: 240px;
+  height: 85vh;
+}
+.downloadDesc p, .downloadDesc button {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.mars01 {
+  background-image: url(../images/Others/01.jpg);
+}
+
+.mars02 {
+  background-image: url(../images/humanFlight/02.jpg);
+}
+
+.mars03 {
+  background-image: url(../images/humanFlight/03.jpg);
+}
+
+.mars04 {
+  background-image: url(../images/humanFlight/04.jpg);
+}
+
+.mars05 {
+  background-image: url(../images/humanFlight/05.jpg);
+}
+
+.container-right {
+  margin-left: 20%;
+  padding-right: 20px;
+}
+
+.container-left {
+  margin-left: 5%;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

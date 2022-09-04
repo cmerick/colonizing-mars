@@ -4,6 +4,9 @@
 .container06{
     background-image: url(../images/eagle-twelve/02.jpg);
 }
+.container07{
+    background-image: url(../images/eagle-twelve/08.jpg);
+}
 
 .carrossel101{
     background-image: url(../images/eagle-twelve/03.jpg);
@@ -64,3 +67,28 @@
     font-size: 15px;
 }
 
+.carrosselSlide{
+    max-height: 100vh;
+    background-color: black;
+
+}
+
+.slideDesc{
+    text-align: center;
+}
+
+.custom-table-2{
+    max-width: 600px;
+    margin-left: 0;
+
+}
+
+.downloadDesc{
+    padding-top: 240px;
+    height: 85vh;
+    
+    p , button{
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
