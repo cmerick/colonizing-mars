@@ -1,63 +1,132 @@
-.container05{
+.container05 {
     background-image: url(../images/eagle-twelve/01.jpg);
 }
-.container06{
+
+.container06 {
     background-image: url(../images/eagle-twelve/02.jpg);
 }
-.container07{
+
+.container07 {
     background-image: url(../images/eagle-twelve/08.jpg);
 }
 
-.carrossel101{
+.carrossel101 {
     background-image: url(../images/eagle-twelve/03.jpg);
 }
-.carrossel102{
+
+.carrossel102 {
     background-image: url(../images/eagle-twelve/04.jpg);
 }
-.carrossel103{
+
+.carrossel103 {
     background-image: url(../images/eagle-twelve/05.jpg);
 }
-.carrossel104{
+
+.carrossel104 {
     background-image: url(../images/eagle-twelve/06.jpg);
 }
-.carrossel105{
+
+.carrossel105 {
     background-image: url(../images/eagle-twelve/07.jpg);
 }
 
-.container-eagle-desc{
-    margin-top: 100px;
+.numbers {
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 90px;
+    }
+
+    @media(max-width:540px) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        h1 {
+
+            font-size: 50px;
+        }
+    }
+}
+
+.containerEagleDesc {
     display: flex;
     height: 90vh;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    
-    .eagle-desc-paragraph{
-        
+
+    .eagleDescParagraph {
+        font-size: 22px;
         max-width: 640px;
         line-height: 50px;
+
+        @media(max-width: 425px) {
+
+            width: auto;
+            font-size: 18px;
+            line-height: 30px;
+
+        }
     }
+
+
 }
 
-.custom-table{
+.custom-table {
     display: block;
     max-width: 520px;
     height: 100%;
     margin-top: 15%;
     margin-left: 10%;
     font-size: 15px;
-    font-weight: 500; 
-    table{
+    font-weight: 500;
+
+    table {
         width: 100%;
         padding-right: 50px;
-        td{
+
+        td {
             margin: 5px 10px;
             padding: 20px 0px;
         }
     }
-         
+
 }
-.carrossel102-content{
+
+#overViewPosition {
+    max-width: 500px;
+    margin-left: 13%;
+    padding-top: 15%;
+
+    @media(max-width: 1024px) {
+        display: block;
+        padding-top: 20%;
+    }
+
+    @media(max-width:425px) {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin-left: auto;
+
+        .subTitleOverview {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .titlePverview {
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}
+
+.carrossel102-content {
     display: block;
     max-width: 520px;
     height: 100%;
@@ -67,28 +136,16 @@
     font-size: 15px;
 }
 
-.carrosselSlide{
-    max-height: 100vh;
-    background-color: black;
+.carrosselSlide {
+    img {
+        height: 100vh;
+    }
 
 }
 
-.slideDesc{
+.slideDesc {
     text-align: center;
 }
 
-.custom-table-2{
-    max-width: 600px;
-    margin-left: 0;
 
-}
 
-.downloadDesc{
-    padding-top: 240px;
-    height: 85vh;
-    
-    p , button{
-        font-size: 12px;
-        font-weight: 500;
-    }
-}

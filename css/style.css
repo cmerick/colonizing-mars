@@ -84,8 +84,26 @@ body {
   margin-bottom: 15px;
 }
 
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+}
+.downloadDesc .downloadDescLinks {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+@media (max-width: 510px) {
+  .downloadDesc .downloadDescLinks {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}
+
 .footer {
-  height: 100px;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -150,17 +168,43 @@ body {
   background-image: url(../images/eagle-twelve/07.jpg);
 }
 
-.container-eagle-desc {
-  margin-top: 100px;
+.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.numbers h1 {
+  font-size: 90px;
+}
+@media (max-width: 540px) {
+  .numbers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .numbers h1 {
+    font-size: 50px;
+  }
+}
+
+.containerEagleDesc {
   display: flex;
   height: 90vh;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
-.container-eagle-desc .eagle-desc-paragraph {
+.containerEagleDesc .eagleDescParagraph {
+  font-size: 22px;
   max-width: 640px;
   line-height: 50px;
+}
+@media (max-width: 425px) {
+  .containerEagleDesc .eagleDescParagraph {
+    width: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .custom-table {
@@ -181,6 +225,36 @@ body {
   padding: 20px 0px;
 }
 
+#overViewPosition {
+  max-width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+@media (max-width: 1024px) {
+  #overViewPosition {
+    display: block;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 425px) {
+  #overViewPosition {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: auto;
+  }
+  #overViewPosition .subTitleOverview {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  #overViewPosition .titlePverview {
+    font-size: 26px;
+    font-weight: 700;
+  }
+}
+
 .carrossel102-content {
   display: block;
   max-width: 520px;
@@ -191,27 +265,12 @@ body {
   font-size: 15px;
 }
 
-.carrosselSlide {
-  max-height: 100vh;
-  background-color: black;
+.carrosselSlide img {
+  height: 100vh;
 }
 
 .slideDesc {
   text-align: center;
-}
-
-.custom-table-2 {
-  max-width: 600px;
-  margin-left: 0;
-}
-
-.downloadDesc {
-  padding-top: 240px;
-  height: 85vh;
-}
-.downloadDesc p, .downloadDesc button {
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .mars01 {
@@ -234,14 +293,57 @@ body {
   background-image: url(../images/humanFlight/05.jpg);
 }
 
+.projDesc {
+  background-color: black;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projDesc p {
+  width: 800px;
+}
+@media (max-width: 425px) {
+  .projDesc {
+    height: 30vh;
+  }
+  .projDesc p {
+    width: auto;
+  }
+}
+
 .container-right {
-  margin-left: 20%;
-  padding-right: 20px;
+  margin-left: 55%;
+  padding-right: 15%;
+}
+@media (max-width: 1024px) {
+  .container-right {
+    margin-left: 50%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 425px) {
+  .container-right {
+    margin-left: 20%;
+    padding-top: 30%;
+  }
 }
 
 .container-left {
   margin-left: 5%;
-  padding-left: 10px;
+  padding-top: 15%;
+}
+@media (max-width: 1024px) {
+  .container-left {
+    margin-left: 5%;
+    padding-top: 20%;
+  }
+}
+@media (max-width: 425px) {
+  .container-left {
+    margin-left: 5%;
+    padding-top: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

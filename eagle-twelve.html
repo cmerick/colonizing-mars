@@ -21,30 +21,35 @@
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-  <header class="container fixed-top">
+  <!-- Header -->
+  <header class="container-fluid fixed-top">
     <nav class="navbar navbar-expand-md bg-transparent pt-4">
-      <a class="navbar-brand custom-logo" href="./index.html">
-        <img src="./images/logos/Logo1.png" class="img-fluid pb-3 me-5 " alt="logo">
-      </a>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0 ">
-          <li class="nav-item ">
-            <a class="nav-link text-white custom-link me-4 p-0" href="./eagle-twelve.html">
-              EAGLE 12
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-white custom-link p-0" href="./mars-colonization.html">MARS
-              COLONIZATION</a>
-          </li>
-        </ul>
+      <div class="container">
+        <a class="navbar-brand custom-logo" href="./index.html">
+          <img src="./images/logos/Logo1.png" class="img-fluid pb-3 me-5 " alt="logo">
+        </a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link text-white custom-link me-4 p-0" href="./eagle-twelve.html">
+                EAGLE 12
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white custom-link p-0" href="./mars-colonization.html">MARS
+                COLONIZATION</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="navbar-toggler custom-menu-btn navbar-dark " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
       </div>
-      <button class="navbar-toggler custom-menu-btn navbar-dark " type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon "></span>
-      </button>
     </nav>
   </header>
+  <!-- Offcanvas -->
   <div class="offcanvas offcanvas-end bg-black" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
     aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header justify-content-end mt-4">
@@ -64,48 +69,52 @@
       </ul>
     </div>
   </div>
+  <!-- Container 1-->
   <div class="container-fluid d-flex flex-column justify-content-end container00 container05">
-    <div class="container aos-init">
-      <div class="container titlePadding text-center text-white aos-init" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container titlePadding aos-init">
+      <div class="container titlePadding text-white aos-init" data-aos="fade-left" data-aos-duration="2000">
         <p class="h5" id="launchComing">LANÇAMENTO A CAMINHO</p>
         <P class="h1">MISSÃO MARS COLONIZATION</P>
+        <a class="button-redirect" href="#">
+          SAIBA MAIS
+        </a>
       </div>
-      <div class="container text-center mt-5 mb-5">
+      <div class="container text-center">
         <img src="../images/home/arrowDown.gif" alt="" class="arrowDown">
       </div>
     </div>
   </div>
-  <div class="container mt-5 mb-5 text-center text-white aos-init" data-aos="flip-up" data-aos-duration="2000">
-    <div class="row">
-      <div class="col">
-        <p class="display-1">126</p>
-        <p class="data-title">LANÇAMENTOS TOTAIS</p>
+  <!-- Container 2 Numbers-->
+  <div class="container-fluid numbers">
+    <div class="row text-center">
+      <div class="col-sm col1">
+        <h1 class="titleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">186</h1>
+        <p class="subTitleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">LANÇAMENTOS</p>
       </div>
-      <div class="col">
-        <p class="display-1">86</p>
-        <p class="data-title">DESEMBARQUES TOTAIS</p>
+      <div class="col-sm col1">
+        <h1 class="titleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">86</h1>
+        <p class="subTitleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">DESEMBARQUES</p>
       </div>
-      <div class="col">
-        <p class="display-1">68</p>
-        <p class="data-title">FOGUETES RECUPERADOS</p>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid mt-5 container00 container06">
-    <div class="container aos-init">
-
-      <div class="container-fluid titlePadding container-eagle-desc aos-init" data-aos="fade-left"
-        data-aos-duration="2000">
-        <p class="eagle-desc-paragraph">O Falcon 9 é um foguete reutilizável de dois estágios projetado e
-          fabricado pela SpaceX para o transporte confiável e seguro de pessoas
-          e cargas úteis para a órbita da Terra e além. Falcon 9 é o primeiro foguete
-          reutilizável de classe orbital do mundo. A capacidade de reutilização permite que
-          a SpaceX refile as partes mais caras do foguete, o que, por sua vez, reduz o custo do
-          acesso ao espaço.
+      <div class="col-sm col1">
+        <h1 class="titleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">68</h1>
+        <p class="subTitleNumb aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000">FOGUETES RECUPEDAROS
         </p>
       </div>
     </div>
   </div>
+  <!-- Container 3 : aprovado-->
+  <div class="container-fluid container00 container06">
+    <div class="container containerEagleDesc">
+      <p class="eagleDescParagraph aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500">
+        O Eagle 12 é um foguete reutilizável de dois estágios projetado e fabricado pela ECM Tech para o transporte
+        confiável e seguro de pessoas e cargas úteis para a órbita da Terra e além. Eagle 12 é o primeiro foguete
+        reutilizável de classe orbital do mundo. A capacidade de reutilização permite que a ECM Tech refile as partes
+        mais
+        caras do foguete, o que, por sua vez, reduz o custo do acesso ao espaço.
+      </p>
+    </div>
+  </div>
+  <!-- Container carousel 1 : aprovado-->
   <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -156,12 +165,12 @@
           <h5 class="">EAGLE 12</h5>
           <h3 class="display-4">PRIMEIRO ESTÁGIO</h3>
           <p class="pe-5">
-            Falcon 9's O primeiro estágio do Falcon 9 incorpora nove motores Merlin e tanques de liga de
+            Eagle 12's O primeiro estágio do Eagle 12 incorpora nove motores Merlin e tanques de liga de
             alumínio-lítio
             contendo oxigênio líquido e propelente de querosene de grau de foguete (RP-1).
           </p>
           <p class="pe-5">
-            O Falcon 9 gera mais de 1,7 milhão de libras de empuxo ao nível do mar.
+            O Eagle 12 gera mais de 1,7 milhão de libras de empuxo ao nível do mar.
           </p>
         </div>
 
@@ -194,39 +203,36 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container-fluid mt-5 container00 container07">
-    <div class="container aos-init">
+  <!-- Container Gawain: aprovado -->
+  <div class="container-fluid container00 container07">
+    <div class="container aos-init aos-animate" id="overViewPosition" data-aos="fade-right" data-aos-duration="1400">
+      <p class="subTitleOverview">Eagle 12</p>
+      <h3 class="titleOverview">Gawain</h3>
+      <p>
 
-      <div class="container-fluid titlePadding container-eagle-desc aos-init" data-aos="fade-left"
-        data-aos-duration="2000">
-        <p class="eagle-desc-paragraph">O Falcon 9 é um foguete reutilizável de dois estágios projetado e
-          fabricado pela SpaceX para o transporte confiável e seguro de pessoas
-          e cargas úteis para a órbita da Terra e além. Falcon 9 é o primeiro foguete
-          reutilizável de classe orbital do mundo. A capacidade de reutilização permite que
-          a SpaceX refile as partes mais caras do foguete, o que, por sua vez, reduz o custo do
-          acesso ao espaço.
-        </p>
-        <table class="container table text-white custom-table-2">
+        Merlin é uma família de motores de foguete desenvolvidos pela SpaceX para uso em seus veículos de
+        lançamento Falcon 1, Falcon 9 e Falcon Heavy. Os motores Merlin usam querosene de grau de foguete (RP-1)
+        e oxigênio líquido como propelentes de foguete em um ciclo de energia de gerador a gás. O motor Merlin
+        foi originalmente projetado para recuperação e reutilização.
 
-          <tbody>
-
-            <tr>
-              <td>PROPULSOR</td>
-              <td class="text-end">LOX <span>/ RP-1</span></td>
-            </tr>
-
-            <tr>
-              <td>IMPULSO</td>
-              <td class=" text-end">845 kN <span>/ 190.000 lbf</span></td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
+      </p>
+      <table class="table text-white" id="widthTable">
+        <tbody>
+          <tr>
+            <td>PROPULSOR</td>
+            <td class="text-end">GALANTINE <span>RP-1</span></td>
+          </tr>
+          <tr>
+            <td>IMPULSO</td>
+            <td class="text-end">845kN <span class="text-muted">/ 190.000 lbf</span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-    <div class="carousel-inner ">
+  <!-- Container carousel 2 : aprovado-->
+  <div id="carouselExampleControls " class="carousel slide carrosselSlide" data-bs-ride="carousel">
+    <div class="carousel-inner container00">
       <div class="carousel-item active">
         <img src="./images/eagle-twelve/09.jpg" class="d-block w-100 carrosselSlide" alt="...">
         <p class="slideDesc">Primeiro lançamento do foguete eagle 12 mark.1</p>
@@ -261,18 +267,22 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <!-- Container : aprovado-->
   <div class="container-fluid text-center downloadDesc">
     <p data-aos="fade-right" data-aos-duration="1200" class="aos-init aos-animate"><span>Para mais informações sobre os
         serviçoes entre em contato
-        com</span> <a href="https://www.linkedin.com/in/erickcastilhomestre/"
+        com</span> <a class="text-muted" href="https://www.linkedin.com/in/erickcastilhomestre/"
         target="blank">erickcastilhomestre@gmail.com</a></p>
-    <button type="button" class="btn btn-outline-light p-3 aos-init aos-animate" data-aos="flip-left"
-      data-aos-duration="1000">BAIXAR
-      GUIA DO USUÁRIO</button>
-    <button type="button" class="btn btn-outline-light ms-2 p-3 aos-init aos-animate" data-aos="flip-up"
-      data-aos-duration="1300">CAPACIDADES E
-      SERVIÇOS</button>
+    <div class="downloadDescLinks aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200">
+      <a class="button-redirect" href="#">
+        BAIXAR
+      </a>
+      <a class="button-redirect" href="#">
+        CAPACIDADES E SERVIÇOS
+      </a>
+    </div>
   </div>
+  <!-- Footer -->
   <footer>
     <div class="container footer">
       <span class="me-4 ">ECM Tech &copy; 2022</span>
